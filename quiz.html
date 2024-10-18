@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Time!</h1>
+        <!-- Start-knapp för att trigga hämtning av frågor -->
+        <button id="startQuiz">Start Quiz</button>
+        
+        <div id="questions">
+            <!-- Frågan och svaren kommer att laddas här -->
+        </div>
+
+        <!-- Knapp för att gå vidare till nästa fråga, dold tills vi har fler frågor -->
+        <button id="nextQuestion" style="display:none;">Next Question</button>
+
+        <div id="restartContainer">
+            <button class="restartBtn">Play again</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

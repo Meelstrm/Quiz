@@ -1,0 +1,210 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(quiz.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 4rem;
+    color: #C6A961; 
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px #C6A961, 0 0 20px #8B6F47;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 15px #C6A961, 0 0 30px #8B6F47;
+    }
+    to {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px #E2C275, 0 0 40px #E2C275;
+    }
+}
+
+
+#questions h3 {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#timer {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #d9534f;
+    font-weight: 1000;
+}
+
+#questions button.answer {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #101f77 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 1000;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+#questions button.answer:hover {
+    background-color: #0056b3;
+    box-shadow: 2px 4px 6px rgb(106, 35, 193);
+    transform: translateY(-0.1rem);
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+button#nextQuestion {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    float: right;
+    right: 20px; 
+    bottom: 20px; 
+    display: block;
+}
+
+button#nextQuestion:hover {
+    background-color: #218838;
+    box-shadow: 2px 4px 6px rgb(106, 35, 193);
+    transform: translateY(-0.1rem);
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+button#startQuiz {
+    padding: 2rem 3rem;
+    text-align: center;
+    border: 0.1rem solid rgb(94, 29, 150);
+    margin-bottom: 1rem;
+    color: rgb(27, 199, 243);
+    background-color: rgb(121, 64, 186);
+    box-shadow: 2px 3px 5px rgb(27, 199, 243);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 1000;
+}
+
+button#startQuiz:hover {
+    box-shadow: 4px 5px 7px rgb(27, 199, 243);
+    transform: translateY(-0.1rem);
+    transition: transform 300ms;
+}
+
+button.correct {
+    background-color: green;
+    color: white;
+}
+
+button.wrong {
+    background-color: red;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+#restartContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.restartBtn {
+    display: none;
+    padding: 2rem 3rem;
+    text-align: center;
+    border: 0.1rem solid rgb(94, 29, 150);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(27, 199, 243);
+    background-color: rgb(121, 64, 186);
+    box-shadow: 2px 3px 5px rgb(27, 199, 243);
+    font-weight: 1000;
+}
+
+.restartBtn:hover {
+    box-shadow: 4px 5px 7px rgb(27, 199, 243);
+    transform: translateY(-0.1rem);
+    transition: transform 300ms;
+}
+
+.resultText {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: auto 100%;
+        background-position: top center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}

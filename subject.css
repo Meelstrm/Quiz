@@ -1,0 +1,93 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(sub1.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%; 
+    
+
+}
+    
+
+
+    #home {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 1000;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid  rgb(94, 29, 150);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color:  rgb(27, 199, 243);
+    background-color: rgb(121, 64, 186);
+    box-shadow:  2px 3px 5px rgb(27, 199, 243);
+    
+
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 4px 5px 7px rgb(27, 199, 243);
+    transform: translateY(-0.1rem);
+    transition: transform 300ms;
+}
+
+h2 {
+    font-size: 5rem;
+    color: rgb(229, 221, 69);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-size: auto 100%;
+        background-position: top center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
